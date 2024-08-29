@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import { Link } from "react-router-dom";
 
@@ -7,9 +7,9 @@ import Map from "./Map";
 import { ServiceData } from "../utils/constants";
 
 export default function Services() {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="bg-[#FFF7F1] h-full lg:py-24 py-10 max-md:px-2">
       <div className="flex flex-col items-center justify-center">
@@ -125,7 +125,7 @@ export default function Services() {
           </div>
         </div>
         <div className="mt-3">
-          <Link to="/register">
+          <Link to="/contact">
             <button className="btn btn-primary">Contact Now</button>
           </Link>
         </div>
