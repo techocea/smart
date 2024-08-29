@@ -126,7 +126,7 @@ export default function Services() {
         </div>
         <div className="mt-3">
           <Link to="/contact">
-            <button className="btn btn-primary">Contact Now</button>
+            <button className="btn btn-primary">CONTACT NOW</button>
           </Link>
         </div>
       </div>
