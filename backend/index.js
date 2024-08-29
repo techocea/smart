@@ -11,31 +11,15 @@ const contactFormRoute = require("./routes/contactFormRoute");
 dotenv.config();
 
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: "http://localhost:4000",
+    credentials: true,
+  })
+);
 
 //Database Connection
 connectDB();
-
-// Demo to check schema is working
-
-// async function createForm() {
-//   try {
-//     const form = new contactForm({
-//         name: "ocean",
-//         contact: "0777711335",
-//         email: "ocean@gmail.com",
-//         qualification: "O/L",
-//         path: "Engineering",
-//         destination: "USA",
-//         funds: "need loan",
-//     });
-//     const result = await form.save();
-//     console.log('Form submitted:', result);
-//   } catch (error) {
-//     console.error('Error submitting form:', error);
-//   }
-// }
-// createForm();
 
 //Routing
 app.use("/api/contact", contactFormRoute);
