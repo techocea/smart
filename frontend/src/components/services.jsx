@@ -2,7 +2,7 @@ import React,{useEffect} from "react";
 
 import { Link } from "react-router-dom";
 
-import Map from "./Map";
+import Map from "./map";
 
 import { ServiceData } from "../utils/constants";
 
