@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:4000/api/contact";
+const API_URL = "https://achievers-server.up.railway.app/api/contact";
 
 export const contactForm = async (formData) => {
   try {
