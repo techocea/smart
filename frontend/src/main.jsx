@@ -25,9 +25,6 @@ import {
   Italy,
 } from "./utils/imports";
 
-// import SignIn from "./components/SignIn.jsx";
-// import SignUp from "./components/SignUp.jsx";
-
 const MainLayout = ({ children }) => (
   <>
     <Header />
@@ -156,8 +153,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
               </MainLayout>
             }
           />
-          {/* <Route path="/sign-in" element={<SignIn />} />
-          <Route path="/sign-up" element={<SignUp />} />  */}
         </Routes>
       </BrowserRouter>
     </div>
